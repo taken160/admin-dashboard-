@@ -23,6 +23,10 @@ export default function Home() {
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
 
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
+
   async function handleLogin(e: React.FormEvent) {
     e.preventDefault();
     setAuthLoading(true);
@@ -45,6 +49,7 @@ export default function Home() {
     }
   }
 
+  // ログイン前の画面
   if (!authed) {
     return (
       <div className="flex items-center justify-center h-screen bg-gray-50">
@@ -76,10 +81,6 @@ export default function Home() {
       </div>
     );
   }
-
-  useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
 
   async function handleSend() {
     const text = input.trim();
