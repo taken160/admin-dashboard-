@@ -20,7 +20,9 @@ export async function POST(request: Request) {
     { headers }
   );
   if (!getRes.ok) {
-    return Response.json({ error: "GitHubからファイル情報を取得できませんでした" }, { status: 500 });
+    const getErr = await getRes.json();
+    console.error("GET error:", getRes.status, JSON.stringify(getErr));
+    return Response.json({ error: "GitHubからファイル情報を取得できませんでした", status: getRes.status, detail: getErr }, { status: 500 });
   }
   const fileData = await getRes.json();
   const sha: string = fileData.sha;
