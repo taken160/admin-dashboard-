@@ -1,0 +1,64 @@
+{
+  "shop_name": "Trattoria Bella",
+  "catch_copy": "南イタリアの家庭料理を、あなたの食卓へ",
+  "description": "ナポリ出身のシェフが手がける本格トラットリア。厳選した輸入食材と国産野菜を組み合わせ、毎日丁寧に仕込んでいます。",
+  "hours": {
+    "lunch": "11:30〜14:30",
+    "dinner": "17:30〜22:00",
+    "closed": "月曜日"
+  },
+  "address": "東京都渋谷区恵比寿2-8-4",
+  "tel": "03-9876-5432",
+  "notice": "【お知らせ】4月20日（日）限定でコース料理の特別メニューをご用意しています。ご予約はお電話にて。",
+  "menu": [
+    {
+      "category": "アンティパスト（前菜）",
+      "items": [
+        { "name": "本日の生ハムとルッコラ", "price": 1200, "description": "24ヶ月熟成パルマ産生ハム" },
+        { "name": "カプレーゼ", "price": 1000, "description": "モッツァレラとトマト、バジルのオイル仕立て" },
+        { "name": "真蛸のマリネ", "price": 1400, "description": "レモンとオリーブオイルで仕上げた一品" }
+      ]
+    },
+    {
+      "category": "パスタ",
+      "items": [
+        { "name": "ボロネーゼ", "price": 1600, "description": "牛・豚合びき肉の濃厚ミートソース" },
+        { "name": "カルボナーラ", "price": 1500, "description": "グアンチャーレと卵黄のクリーミーなソース" },
+        { "name": "ペスカトーレ", "price": 1800, "description": "魚介たっぷりのトマトソース" },
+        { "name": "トリュフクリームパスタ", "price": 2200, "description": "黒トリュフを贅沢に使用した季節限定品" }
+      ]
+    },
+    {
+      "category": "ピッツァ",
+      "items": [
+        { "name": "マルゲリータ", "price": 1400, "description": "トマト・モッツァレラ・バジルのシンプルな定番" },
+        { "name": "クワトロフォルマッジ", "price": 1800, "description": "4種のチーズとはちみつ" },
+        { "name": "ディアボラ", "price": 1600, "description": "サラミとトマトのピリ辛ピッツァ" }
+      ]
+    },
+    {
+      "category": "ドルチェ（デザート）",
+      "items": [
+        { "name": "ティラミス", "price": 750, "description": "毎日手作り、マスカルポーネたっぷり" },
+        { "name": "パンナコッタ", "price": 700, "description": "季節のフルーツソース添え" }
+      ]
+    },
+    {
+      "category": "ドリンク",
+      "items": [
+        { "name": "グラスワイン（赤・白）", "price": 800, "description": "イタリア各地の厳選ワイン" },
+        { "name": "スパークリングワイン", "price": 900, "description": "" },
+        { "name": "エスプレッソ", "price": 400, "description": "" },
+        { "name": "ソフトドリンク", "price": 350, "description": "コーラ・オレンジ・ペリエ" }
+      ]
+    }
+  ],
+  "images": {
+    "hero": "images/hero.jpg",
+    "logo": "images/logo.png"
+  },
+  "sns": {
+    "instagram": "https://instagram.com/trattoria_bella",
+    "twitter": ""
+  }
+}
